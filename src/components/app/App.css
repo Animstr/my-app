@@ -1,0 +1,9 @@
+.app {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.nav-items{
+  background-color: #3d5a80;
+  margin-top: 30px;
+  padding: 20px 20px;
+}
