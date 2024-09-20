@@ -17,7 +17,13 @@ class AddNewEmployee extends Component {
 
     onAddEmployee = (e) => {
         e.preventDefault();
-        this.props.onAddEmployee(this.state.name, this.state.salary);
+        if (this.state.name !== '' && this.state.salary !== '') {
+            this.props.onAddEmployee(this.state.name, this.state.salary);
+        }
+        this.setState({
+            name: '',
+            salary: ''
+        })
     }
     render () {
         const {salary, name} = this.state;
